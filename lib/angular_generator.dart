@@ -36,9 +36,9 @@ class AngularGenerator {
     }
 
     await _createDirectory(path);
-    _writeTo(generator.generateDart(), '$path/${name}_component.dart');
-    _writeTo(generator.generateHtml(), '$path/${name}_component.html');
-    _writeTo(generator.generateScss(), '$path/${name}_component.scss');
+    _writeTo(generator.generateDart(), '$path/${name}.dart');
+    _writeTo(generator.generateHtml(), '$path/${name}.html');
+    _writeTo(generator.generateScss(), '$path/${name}.scss');
   }
 
   Future _createDirectory(String path) {
@@ -84,11 +84,11 @@ class ComponentGenerator {
 
 @Component(
   selector: '${toHyphenCase(name)}',
-  templateUrl: '${name}_component.html',
-  styleUrls: ['${name}_component.css'])
-class ${toPascalCase(name)}Component implements OnInit {
+  templateUrl: '${name}.html',
+  styleUrls: ['${name}.css'])
+class ${toPascalCase(name)} implements OnInit {
 
-  ${toPascalCase(name)}Component();
+  ${toPascalCase(name)}();
 
   @override
   void ngOnInit() {}

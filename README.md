@@ -28,16 +28,16 @@ Under development. Will frequently make breaking changes without notice.
 
 Would support three styles.
 
-    ngg component <path> --naming=<short, default, common> 
+    ngg component <path> --naming=<default, neutral, common> 
 
 ```
-// short
+// default
 user/
   user.dart
   user.scss
   user.html
 
-// default
+// neutral
 user/
   user_component.dart
   user_component.scss
