@@ -85,7 +85,8 @@ class ComponentGenerator {
 @Component(
   selector: '${toHyphenCase(name)}',
   templateUrl: '${name}.html',
-  styleUrls: ['${name}.css'])
+  styleUrls: ['${name}.css'],
+  directives: [])
 class ${toPascalCase(name)} implements OnInit {
 
   ${toPascalCase(name)}();
